@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+    <script
+      src="https://kit.fontawesome.com/e908656932.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="success-card hidden" id="success-card">
+        <img src="/assets/images/icon-success.svg" alt="success" />
+        <h1>Thank for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <span id="success-email"></span>. Please open it and click the button
+          inside to cofirm your subscription.
+        </p>
+        <button id="dismiss-btn" class="hover-cursor-btn">
+          Dismiss message
+        </button>
+      </section>
+
+      <section class="text-container" id="main-container">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <ul>
+          <li class="icon-list">
+            <img src="/assets/images/icon-list.svg" alt="" />Product discovery
+            and building what matters
+          </li>
+          <li class="icon-list">
+            <img src="/assets/images/icon-list.svg" alt="" />Measuring to ensure
+            updates are a success
+          </li>
+          <li class="icon-list">
+            <img src="/assets/images/icon-list.svg" alt="" />And Much more!
+          </li>
+        </ul>
+
+        <section class="email-container">
+          <div class="email-text-container">
+            <span class="email-text">Email address</span>
+            <span id="email-error" class="email-error"
+              >Valid email required</span
+            >
+          </div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="hover-cursor-input"
+          /><br />
+          <button id="email-btn" class="email-btn hover-cursor-btn">
+            Subscribe to monthly newsletter
+          </button>
+        </section>
+      </section>
+
+      <section class="image-container" id="image-container">
+        <img
+          class="newsletter-img"
+          src="/assets/images/illustration-sign-up-desktop.svg"
+          alt=""
+        />
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
