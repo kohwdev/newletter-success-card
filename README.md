@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://newletter-success-card.vercel.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-js-cssflex-6bgsdnMIzl)
+- Live Site URL: [https://newletter-success-card.vercel.app/](https://newletter-success-card.vercel.app/)
 
 ## My process
 
