@@ -751,9 +751,6 @@ input[type="email"] {
   font-size: 0.75rem;
   color: hsl(234, 29%, 20%);
   font-weight: 700;
-}
-
-.email-text-container {
   display: flex;
   justify-content: space-between;
 }
