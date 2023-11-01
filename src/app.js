@@ -1,14 +1,16 @@
 const emailInput = document.getElementById("email");
 const emailError = document.getElementById("email-error");
-const submitButton = document.getElementById("email-btn");
 const mainPage = document.getElementById("main-container");
 const mainImage = document.getElementById("image-container");
 const dismissBtn = document.getElementById("dismiss-btn");
+const emailForm = document.getElementById("email-form");
 
 const successCard = document.getElementById("success-card");
 const successEmail = document.getElementById("success-email");
 
-submitButton.addEventListener("click", function () {
+emailForm.addEventListener("submit", (e) => {
+  e.preventDefault(); // Prevent the default form submission behavior
+
   const email = emailInput.value.trim();
   // case for when email address in invalid
   if (email === "" || !validateEmail(email)) {
@@ -21,7 +23,7 @@ submitButton.addEventListener("click", function () {
     successCard.classList.remove("hidden");
     mainPage.style.display = "none";
     mainImage.style.display = "none";
-    successEmail.innerHTML = `${emailInput.value}`;
+    successEmail.innerHTML = emailInput.value;
   }
 });
 
